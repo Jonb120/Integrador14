@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo2.png" alt="Logo del Restaurante">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="compras-en-linea">
+            <h2>Compras en Línea</h2>
+            <div class="productos">
+                <h3>Seleccione productos:</h3>
+                <div class="producto">
+                    <label for="producto1">Camarones con Champiñones en salsa de Ajo ($24.000):</label>
+                    <input type="checkbox" id="producto1" data-precio="24.000">
+                </div>
+                <br>
+                <div class="producto">
+                    <label for="producto2">Picada Anillos de Calamar ($78.000):</label>
+                    <input type="checkbox" id="producto2" data-precio="78.000">
+                </div>
+                <br>
+                <div class="producto">
+                    <label for="producto3">Omelette de Camarón ($38.000):</label>
+                    <input type="checkbox" id="producto3" data-precio="38.000">
+                </div>
+                <br>
+                <div class="producto">
+                    <label for="producto4">Langostinos Crispy ($48.000):</label>
+                    <input type="checkbox" id="producto4" data-precio="48.000">
+                </div>
+                <br>
+                <div class="producto">
+                    <label for="producto4">Bruschetta ($24.000):</label>
+                    <input type="checkbox" id="producto4" data-precio="24.000">
+                </div>
+                <br>
+                <div class="producto">
+                    <label for="producto4">Pulpo a la Gallega ($24.000):</label>
+                    <input type="checkbox" id="producto4" data-precio="48.000">
+                </div>
+                <br>
+            </div>
+            <div class="total">
+                <h3>Total: $<span id="total">0</span></h3>
+            </div>
+            <button onclick="simularPedido()">Realizar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
